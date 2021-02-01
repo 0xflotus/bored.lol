@@ -25,7 +25,7 @@ main {
   height: 100%;
   justify-content: center;
   margin: auto;
-  max-width: 777px;
+  max-width: 600px;
 }
 
 h1 {
@@ -37,7 +37,7 @@ h1 {
 }
 
 
-.search-bar {
+.generate-btn {
   border: 3px solid #fff;
   border-radius: 10px;
   color: #eee;
@@ -47,100 +47,13 @@ h1 {
   margin-bottom: 2rem;
   background: transparent;
   padding: 1rem;
-  text-align: left;
+  outline: none;
   text-transform: lowercase;
   width: calc(100% - 2rem);
 }
 
-.search-bar::placeholder {
-  color: #eee;
-  font-family: 'Inter', sans-serif;
-}
-
-
-.search-bar:focus {
-  outline: none;
-}
-
-.results {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-  width: 100%;
-  grid-gap: 1rem;
-  overflow-x: hidden;
-  overflow-y: visible;
-  padding: 0 1rem 1rem 1rem;
-}
-
-.result {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.emoji > * {
-  pointer-events: none;
-}
-
-.emoji {
-  border: 5px solid #fff;
-  border-radius: 50%;
+.generate-btn:hover, .generate-btn:focus {
   cursor: pointer;
-  font-size: 3rem;
-  margin-bottom: .5rem;
-  position: relative;
-}
-
-.emoji:hover {
-  background-color: #fff;
-}
-
-.emoji:active {
-  background-color: #ddd;
-}
-
-.emoji::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.emoji-char {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.emoji-name {
-  line-height: 1.2;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-}
-
-.notification {
-  position: fixed;
-  bottom: -65px;
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
-  border-top: 5px solid #fff;
-  color: #222;
-  text-align: center;
-  transition: bottom .3s;
-}
-
-.notification.active {
-  bottom: 0;
-}
-
-.copy-field {
-  position: absolute;
-  clip: rect(0,0,0,0);
 }
 
 ::-webkit-scrollbar {
@@ -157,145 +70,4 @@ h1 {
 }
 ::-webkit-scrollbar-track {
   background: transparent;
-}
-
-/* test animations */
-.el {
-  -webkit-animation: jello-horizontal 0.9s both;
-        animation: jello-horizontal 0.9s both;
-        cursor: pointer;
-}
-
-#no-animation {
-  visibility: visible;
-}
-
-@media (max-width: 800px){
-  #no-animation {
-      visibility: hidden;
-  }
-}
-
-#logo:hover {
-  -webkit-animation: jello-horizontal 0.9s both;
-        animation: jello-horizontal 0.9s both;
-}
-
-.e {
-  animation: jiggle 5s infinite;
-  
-}
-
-@-webkit-keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-            transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-            transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-  }
-}
-
-
-@keyframes jiggle2 {
-  
-  7.5% {
-    transform: rotate(7.5deg);
-  }
-  10% {
-    transform: rotate(-7.5deg);
-  }
-  12.5% {
-    transform: rotate(0deg);
-  }
- 
-}
-
-
-@keyframes jiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  2.5% {
-    transform: rotate(5deg);
-  }
-  5% {
-    transform: rotate(-5deg);
-  }
-  7.5% {
-    transform: rotate(7.5deg);
-  }
-  10% {
-    transform: rotate(-7.5deg);
-  }
-  12.5% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-#emoji {  
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-  from { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 20px); }
-  to   { transform: translate(0, -0px); }    
 }

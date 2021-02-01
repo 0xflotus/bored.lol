@@ -1,52 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-         <link rel="icon" href="https://camo.githubusercontent.com/4cca6726ddfda346ee7ec38f9ffabec47f67a31e/68747470733a2f2f7777772e6e696365706e672e636f6d2f706e672f66756c6c2f34312d3431323539395f626c75652d71756f7465732d71756f74652d69636f6e2d626c75652d706e672e706e67?">
-        <title>getQuotes</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="getQuotes is a quote generator.">
-        <meta charset="UTF-8">
-        <body style='overflow-x: hidden;'>
+<!doctype html>
+<html lang="en">
 
-             <!-- FONTS-->
-             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
-             <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>bored.lol | Generate things to do, when your bored</title>
+  <link rel="icon" href="https://i.ibb.co/MD2tPfB/OIP-10-removebg-preview.png">
+  <meta name="description" content="Explore thousands of emojis right in your web browser. Search, copy, and use. All for free, accessible to all.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="twitter:description" content="Explore thousands of emojis right in your web browser. Search, copy, and use. All for free, accessible to all."/>
+  <meta name="twitter:title" content="Webmoji | An open-source emoji collection" />
+  <meta name="twitter:image" content="https://webmoji.xyz/assets/webmoji-twitter-card.jpg"/>
+  <meta name="twitter:card" content="summary_large_image">
 
-</head> 
+  <link rel="stylesheet" href="./ui/ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176993861-1"></script>
 
+</head>
 <body>
 
-  <div class="conainer">
-    <div class="row max-height align-items-center">
-      <div class="col-11 mx-auto col-md-6 quote-container p-5">
-        <button class="generate-btn" id="generate-btn">getInspiringQuotes</button>
-        <button class="generate-btn2" id="generate-btn2">getPositiveQuotes</button>
-        <button class="generate-btn3" id="generate-btn3">getSadQuotes</button>
-
-        <h1>getQuotes</h1>
-
-        <div class="text">
-        <h3 class="text-muted"><span class="quote" id="quote">There are over 30 inspiring quotes in this database. To get started simply press "getInspiringQuotes."</i>
-          </span></i></span></h3>
-        <h5 class="text-right text-capitalize author"><br><span class="quote-author ml-3 "></span></h5>
+  <main>
+      <h1>bored.lol 🤔</h1>
+      <div class="text">
+        <span style="margin-top: -20px; font-family: 'Inter'; font-weight: 500; text-align: center;" class="quote" id="quote">get started - press "generate" below 👇</i>
+          </span></i></span>
+        <h5 class="text-right text-capitalize author" style="font-family: 'Inter'; font-weight: bold; text-align: center;"><br><span class="quote-author ml-3 ">Difficulty: </span> </h5>
       </div>
       </div>
-
-     
-
-      <h6 class="createdby"><i class="fas fa-code"></i> made with <i class="fas fa-heart"></i> by Bereket Semagn</h6>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+      <br>
+      <button class="generate-btn" id="generate-btn">Generate</button>
+      <span style="color: gray; margin-top: -15px; font-size: 15px;">like this? try out our <a style="text-decoration: none; color: white;" href="/twitter">twitter account generator</a></span>
+  </main>
 
 
-    </div>
-  </div>
-
-
-  <script src="script.js"></script>
+  <script src="./build/generate.js"></script>
 </body>
-
 </html>
