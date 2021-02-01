@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Webmoji | An open-source emoji collection</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <meta name="description" content="Explore thousands of emojis right in your web browser. Search, copy, and use. All for free, accessible to all.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="twitter:description" content="Explore thousands of emojis right in your web browser. Search, copy, and use. All for free, accessible to all."/>
+  <meta name="twitter:title" content="Webmoji | An open-source emoji collection" />
+  <meta name="twitter:image" content="https://webmoji.xyz/assets/webmoji-twitter-card.jpg"/>
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="./ui/ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176993861-1"></script>
+
+</head>
+<body>
+
+  <main>
+      <h1>webmoji 🌈</h1>
+      <p style="margin-top: -20px; font-family: 'Inter'; font-weight: 500;">click an emoji to copy! </p>
+      <br>
+      <button class="search-bar" >Generate</button>
+      <div class="all-emojis"></div>
+      <div class="results"></div>
+      <input class="copy-field">
+      <div class="notification">Copied <span class="notification-emoji"></span> to clipboard 	(◕‿◕)</div>
+  </main>
+
+  <script src="./build/emoji.js"></script>
+</body>
+</html>

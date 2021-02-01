@@ -1,0 +1,188 @@
+body {
+    background: #f16059;
+  }
+  
+  .generate-btn {
+    color: white;
+    background: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 240px;
+    left: 90px;
+    height: 100px;
+    width: 400px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid white;
+    font-family: 'Poppins';
+    transition: 1s;
+  }
+  
+  .generate-btn:hover {
+    background: #F16059;
+    transition: 1s;
+    color: black;
+    outline: none;
+    border-color: 100px solid black;
+  }
+  
+  .quote {
+    position: absolute;
+    top: 70px;
+    margin-right: 10%;
+    left: 50px;
+    color: white;
+    font-family: 'Poppins'
+  }
+  
+  
+  .author {
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    color: white;
+    font-family: 'Poppins'
+  }
+  
+  .text {
+    background-color: black;
+    color: white;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 350px;
+    left: 90px;
+    border-radius: 30px;
+  }
+  
+  
+  
+  .generate-btn2 {
+    color: white;
+    background: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 240px;
+    left: 550px;
+    height: 100px;
+    width: 400px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid white;
+    font-family: 'Poppins';
+    transition: 1s;
+  }
+  
+  .generate-btn2:hover {
+    background: #F16059;
+    transition: 1s;
+    color: black;
+    outline: none;
+    border-color: 100px solid black;
+  }
+  
+  .quote2 {
+    position: absolute;
+    top: 70px;
+    margin-right: 10%;
+    left: 50px;
+    color: white;
+    font-family: 'Poppins'
+  }
+  
+  
+  .author2 {
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    color: white;
+    font-family: 'Poppins'
+  }
+  
+  .text2 {
+    background-color: black;
+    color: white;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 350px;
+    left: 550px;
+    border-radius: 30px;
+  }
+  
+  
+  .generate-btn3 {
+    color: white;
+    background: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 240px;
+    left: 1020px;
+    height: 100px;
+    width: 400px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid white;
+    font-family: 'Poppins';
+    transition: 1s;
+  }
+  
+  .generate-btn3:hover {
+    background: #F16059;
+    transition: 1s;
+    color: black;
+    outline: none;
+    border-color: 100px solid black;
+  }
+  
+  .quote3 {
+    position: absolute;
+    top: 70px;
+    margin-right: 10%;
+    left: 50px;
+    color: white;
+    font-family: 'Poppins'
+  }
+  
+  
+  .author3 {
+    position: absolute;
+    top: 230px;
+    left: 50px;
+    color: white;
+    font-family: 'Poppins'
+  }
+  .text3 {
+    background-color: black;
+    color: white;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 350px;
+    left: 1020px;
+    border-radius: 30px;
+  }
+  
+  
+  h1{
+    font-family: 'Poppins';
+    font-size: 100px;
+    position: absolute;
+    left: 450px;
+    top: -70px;
+  }
+  
+  .createdby{
+    font-family: 'Poppins';
+    font-size: 25px;
+    position: absolute;
+    left: 520px;
+    top: 55px;
+  }
+  
