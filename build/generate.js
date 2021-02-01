@@ -103,7 +103,6 @@
   
     btn.addEventListener("click", function() {
       let random = Math.floor(Math.random() * quotes.length);
-      console.log(random);
   
       document.getElementById("quote").textContent = quotes[random].quote;
       document.querySelector(".author").textContent = quotes[random].author;
