@@ -1,2 +1,1 @@
 # bored.lol
-# bored.lol
